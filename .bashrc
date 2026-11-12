@@ -9,3 +9,6 @@ alias ll='ls -alF'
 alias gs='git status'
 alias gl='git log --oneline --graph'
 export EDITOR=vim
+
+# deploy shop
+alias deploy='rsync -az ./dist/ rkit@200.234.122.220:/srv/shop/ && echo deployed 👻'
